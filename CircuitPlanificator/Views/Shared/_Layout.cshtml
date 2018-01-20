@@ -1,0 +1,74 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CircuitPlanificator</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link type="text/css" rel="stylesheet" href="~/Content/materialize.css" media="screen,projection" />
+    <link type="text/css" rel="stylesheet" href="~/Content/palette.css" />
+    @if (IsSectionDefined("AddToHead"))
+    {
+        @RenderSection("AddToHead", required: false)
+    }
+
+</head>
+<body>
+    <header>
+        <nav class="dark-primary-color ">
+            <div class="nav-wrapper">
+                <div class="brand-logo left">@Html.ActionLink("CircuitPlanificator", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
+                <a href="#" data-activates="mobile-demo" class="button-collapse right"><i class="material-icons">menu</i></a>
+
+                <ul class="right hide-on-med-and-down">
+                    @*<li><a class="dropdown-button" href="#!" data-activates="dropdown1">Consulta evolución<i class="material-icons right">arrow_drop_down</i></a></li>
+                        <li>@Html.ActionLink("Carga de datos", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Datos usuario", "Index", "UserData")</li>
+                        <li>@Html.ActionLink("Datos Cronomilking", "Index", "DatosCronomilking")</li>
+                        <li>@Html.ActionLink("Info usuario", "Index", "UserInfo")</li>*@
+                </ul>
+                <ul class="side-nav" id="mobile-demo">
+                    @*<li>@Html.ActionLink("Consulta evolución rutinas", "EvolutionQuery", "DataAnalysis")</li>
+                        <li>@Html.ActionLink("Consulta evolución flujos", "EvolutionQueryDataFlow", "DataAnalysis")</li>
+                        <li>@Html.ActionLink("Consulta evolución", "EvolutionQuery", "DataAnalysis")</li>
+                        <li>@Html.ActionLink("Carga de datos", "Index", "Home")</li>
+                        <li>@Html.ActionLink("Datos usuario", "Index", "UserData")</li>
+                        <li>@Html.ActionLink("Datos Cronomilking", "Index", "DatosCronomilking")</li>
+                        <li>@Html.ActionLink("Info usuario", "Index", "UserInfo")</li>*@
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="body-content">
+            @RenderBody()
+
+        </div>
+    </main>
+    <footer class="page-footer dark-primary-color " style="position:fixed; bottom:0; width:100%">
+        <div class="container">
+
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+                &copy; @DateTime.Now.Year - CircuitPlanification
+
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="~/Scripts/jquery-3.2.1.js"></script>
+    <script type="text/javascript" src="~/Scripts//materialize.min.js"></script>
+
+
+    <script type="text/javascript">
+        $(".button-collapse").sideNav();
+        $(".dropdown-button").dropdown();
+
+    </script>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
