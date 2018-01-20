@@ -38,12 +38,15 @@ namespace CircuitPlanificator.Repositories
                 {
                     if(fare["soldOut"].ToString().Equals("False") && fare["unavailable"].ToString().Equals("False"))
                     {
-                        Fare aux = new Fare();
-                        aux.iataArrive = iataArrive;
-                        aux.iataDepart = iataDepart;
-                        aux.precio = fare["price"]["value"].ToString();
-                        aux.date = fare["day"].ToString();
-                        result.Add(aux);
+                        if(fare["day"].ToString().Equals(date.ToString("dd/MM/yyyy")))
+                        {
+                            Fare aux = new Fare();
+                            aux.iataArrive = iataArrive;
+                            aux.iataDepart = iataDepart;
+                            aux.precio = fare["price"]["value"].ToString();
+                            aux.date = fare["day"].ToString();
+                            result.Add(aux);
+                        }
                     }
                 }
             }

@@ -41,6 +41,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AirportCoords.cs" />
     <Compile Include="Fare.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

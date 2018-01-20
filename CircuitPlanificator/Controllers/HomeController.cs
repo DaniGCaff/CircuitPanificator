@@ -1,4 +1,5 @@
-﻿using CircuitPlanificator.Models;
+﻿using CircuitPlanification.RepositoryModels;
+using CircuitPlanificator.Models;
 using MySql.Data.MySqlClient;
 using System;
 using System.Collections.Generic;
@@ -70,15 +71,39 @@ namespace CircuitPlanificator.Controllers
                 }
 
                 connection.Open();
-
+                List<Fare> result = new List<Fare>();
                 // DbConnection that is already opened
                 using (CircuitPlanificationContext context = new CircuitPlanificationContext(connection, false))
                 {
-                    foreach(Routes route in context.Routes.ToList().FindAll(p => p.iataCodeDepart == code))
-                        return Json(await CircuitPlanificator.Repositories.FaresRepository.GetChipestFaresFor(route.iataCodeArrive, route.iataCodeDepart, DateTime.ParseExact(date, "dd/MM/yyyy", System.Globalization.CultureInfo.CurrentCulture)), JsonRequestBehavior.AllowGet);
+                    foreach (Routes route in context.Routes.ToList().FindAll(p => p.iataCodeDepart == code))
+                        result.AddRange(await CircuitPlanificator.Repositories.FaresRepository.GetChipestFaresFor(route.iataCodeArrive, route.iataCodeDepart, DateTime.ParseExact(date, "dd/MM/yyyy", System.Globalization.CultureInfo.CurrentCulture)));
                 }
+                return Json(result, JsonRequestBehavior.AllowGet);
             }
             return View();
+        }
+
+        public ActionResult GetAirportCoords(string code)
+        {
+            using (MySqlConnection connection = new MySqlConnection(connectionString))
+            {
+                // Create database if not exists
+                using (CircuitPlanificationContext contextDB = new CircuitPlanificationContext(connection, false))
+                {
+                    contextDB.Database.CreateIfNotExists();
+                }
+
+                connection.Open();
+                List<Fare> result = new List<Fare>();
+                // DbConnection that is already opened
+                using (CircuitPlanificationContext context = new CircuitPlanificationContext(connection, false))
+                {
+                    AirportCoords aux = new AirportCoords();
+                    aux.latitud = context.Airports.ToList().Find(a => a.iataCode == code).latitude.ToString();
+                    aux.longitud = context.Airports.ToList().Find(a => a.iataCode == code).longitude.ToString();
+                    return Json(aux, JsonRequestBehavior.AllowGet);
+                }
+            }
         }
     }
 }
