@@ -1,0 +1,10 @@
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\bin\Debug\CircuitPlanificator.Repositories.dll
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\bin\Debug\CircuitPlanificator.Repositories.pdb
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\obj\Debug\CircuitPlanificator.Repositories.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\obj\Debug\CircuitPlanificator.Repositories.dll
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\obj\Debug\CircuitPlanificator.Repositories.pdb
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\obj\Debug\CircuitPlanificator.Repositories.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\bin\Debug\CircuitPlanification.RepositoryModels.dll
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanificator.Repositories\bin\Debug\CircuitPlanification.RepositoryModels.pdb

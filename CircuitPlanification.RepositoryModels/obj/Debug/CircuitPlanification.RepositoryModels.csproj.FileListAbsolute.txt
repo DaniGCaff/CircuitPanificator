@@ -1,0 +1,6 @@
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanification.RepositoryModels\bin\Debug\CircuitPlanification.RepositoryModels.dll
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanification.RepositoryModels\bin\Debug\CircuitPlanification.RepositoryModels.pdb
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanification.RepositoryModels\obj\Debug\CircuitPlanification.RepositoryModels.csprojResolveAssemblyReference.cache
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanification.RepositoryModels\obj\Debug\CircuitPlanification.RepositoryModels.csproj.CoreCompileInputs.cache
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanification.RepositoryModels\obj\Debug\CircuitPlanification.RepositoryModels.dll
+C:\Users\Daniel\Documents\Hackaton\CircuitPanificator\CircuitPlanification.RepositoryModels\obj\Debug\CircuitPlanification.RepositoryModels.pdb
