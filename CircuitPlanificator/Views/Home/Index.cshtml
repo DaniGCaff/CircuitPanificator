@@ -35,54 +35,107 @@
                 <a class="waves-effect waves-light btn right"><i class="material-icons right">send</i>Search</a>
             </div>
         </div>
-        <div id="selectDestinationContainer" >
+        <div id="selectDestinationContainer">
             <div class="row">
-                <dl>
+                <dl style="float:left; margin-right:2rem">
                     <dt>Price:</dt>
                     <dd>56€</dd>
+                </dl>
+                <dl style="float:left; margin-right:2rem">
                     <dt>Date start:</dt>
                     <dd>21/05/2018</dd>
+                </dl>
+                <dl style="float:left; margin-right:2rem">
                     <dt>Date end:</dt>
                     <dd>30/06/2018</dd>
                 </dl>
+                <a class="waves-effect waves-light btn left" style="margin-top:1rem"><i class="material-icons right">send</i>Confirm</a>
             </div>
+           
             <div class="row">
                 <ul id="tabs-swipe-demo" class="tabs">
                     <li class="tab col s3"><a href="#test-swipe-1">Test 1</a></li>
                     <li class="tab col s3"><a class="active" href="#test-swipe-2">Test 2</a></li>
                     <li class="tab col s3"><a href="#test-swipe-3">Test 3</a></li>
                 </ul>
-                <div id="test-swipe-1" class="col s12 ">Test 1</div>
-                <div id="test-swipe-2" class="col s12 ">
+                <div id="test-swipe-1" class="col s12 " style="overflow:auto; max-height:20rem">
                     <table>
                         <thead>
                             <tr>
-                                <th>Name</th>
-                                <th>Item Name</th>
-                                <th>Item Price</th>
+                                <th>Destination</th>
+                                <th>Price</th>
+                                <th>Time</th>
+                                <th>Action</th>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td>Alvin</td>
-                                <td>Eclair</td>
-                                <td>$0.87</td>
-                            </tr>
-                            <tr>
-                                <td>Alan</td>
-                                <td>Jellybean</td>
-                                <td>$3.76</td>
-                            </tr>
-                            <tr>
-                                <td>Jonathan</td>
-                                <td>Lollipop</td>
-                                <td>$7.00</td>
+                                <td>Amsterdam</td>
+                                <td>15€</td>
+                                <td>
+                                    <p>Departure: 27/05/2018 9:35</p>
+                                    <p>Arrival: 27/05/2018 10:40</p>
+                                </td>
+                                <td>
+                                    <a style="cursor:pointer">Select</a>
+                                </td>
                             </tr>
                         </tbody>
                     </table>
                 </div>
-                <div id="test-swipe-3" class="col s12 ">Test 3</div>
+                <div id="test-swipe-2" class="col s12" style="overflow:auto; max-height:20rem">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Destination</th>
+                                <th>Price</th>
+                                <th>Time</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Amsterdam</td>
+                                <td>15€</td>
+                                <td>
+                                    <p>Departure: 27/05/2018 9:35</p>
+                                    <p>Arrival: 27/05/2018 10:40</p>
+                                </td>
+                                <td>
+                                    <a style="cursor:pointer">Select</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div id="test-swipe-3" class="col s12 " style="overflow:auto; max-height:20rem">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Destination</th>
+                                <th>Price</th>
+                                <th>Time</th>
+                                <th>Action</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>Amsterdam</td>
+                                <td>15€</td>
+                                <td>
+                                    <p>Departure: 27/05/2018 9:35</p>
+                                    <p>Arrival: 27/05/2018 10:40</p>
+                                </td>
+                                <td>
+                                    <a style="cursor:pointer">Select</a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
         <div id="resumeContainer" hidden>
